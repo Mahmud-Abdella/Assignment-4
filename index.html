@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+
+    <!--link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    /-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .container {
+        background-color: rgb(35, 138, 207);
+        margin: 2px 2px;
+        width: 1500px;
+        height: 700px;
+        display: flex;
+        box-sizing: border-box;
+        overflow-y: hidden;
+      }
+
+      .contactform {
+        position: relative;
+        left: 990px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 20px;
+        border: none;
+        padding: 10px 10px;
+        width: 420px;
+        height: 42vw;
+        background-color: rgb(247, 247, 240);
+        font-family: "Helvetica", sans-serif;
+      }
+
+      h1 {
+        color: rgb(35, 138, 207);
+        width: 400px;
+        position: relative;
+      }
+
+      .blck {
+        width: 350px;
+        display: block;
+        height: 40px;
+        position: relative;
+
+        border: solid 2px rgb(35, 138, 207);
+      }
+      .message {
+        height: 100px;
+        position: relative;
+      }
+      .btn {
+        background-color: rgb(35, 138, 207);
+        width: 350px;
+        height: 50px;
+        position: relative;
+        color: white;
+        border: solid 1px rgb(35, 138, 207);
+        font-size: 30px;
+      }
+      .icons {
+        position: relative;
+        top: 400px;
+        left: 300px;
+        color: white;
+      }
+      #bigenvelope {
+        font-size: 90px;
+        margin: 20px 20px;
+        transform: rotate(-15deg);
+        position: relative;
+        bottom: 220px;
+        right: 50px;
+      }
+      #smallenvelope {
+        font-size: 60px;
+        transform: rotate(15deg);
+        position: relative;
+        bottom: 20px;
+        right: 140px;
+      }
+      #at {
+        font-size: 100px;
+        font-style: bold;
+        position: relative;
+        bottom: 120px;
+        right: 100px;
+        font-weight: 900;
+      }
+      #rectangle-1 {
+        font-size: 100px;
+        position: relative;
+        bottom: 90px;
+      }
+      #rectangle-2 {
+        font-size: 100px;
+        position: relative;
+        bottom: 90px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="contactform">
+        <h1>Contact Us</h1>
+        <form action="submit">
+          <input
+            class="blck"
+            type="text"
+            id="nam"
+            name="fulname"
+            placeholder="Full name"
+          />
+
+          <br />
+          <br />
+          <input
+            class="blck elements"
+            type="email"
+            name="Email"
+            id="email"
+            placeholder="Email"
+          />
+          <br />
+          <br />
+          <input
+            class="blck elements"
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Phone number"
+          />
+          <br />
+          <br />
+          <input
+            class="blck elements"
+            type="text"
+            id="site"
+            name="website"
+            placeholder="Website"
+          />
+          <br />
+          <br />
+          <label for="textarea" class="message">Message</label>
+          <textarea
+            class="blck message"
+            name="textarea"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <br />
+          <br />
+          <button name="button" type="submit" class="btn elements">
+            Submit
+          </button>
+        </form>
+      </div>
+      <div class="icons">
+        <i class="fas fa-envelope" id="bigenvelope"></i>
+        <i class="fas fa-envelope" id="smallenvelope"></i>
+        <i class="fa-solid fa-rectangle" id="rectangle-1"></i>
+        <i class="fa-solid fa-rectangle" id="rectangle-2"></i>
+        <i class="fas fa-at" id="at"></i>
+      </div>
+    </div>
+  </body>
+</html>
