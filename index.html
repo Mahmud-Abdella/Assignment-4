@@ -4,66 +4,60 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
-
-    <!--link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    /-->
+    <title>Contact Form</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
-      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
     />
     <style>
       .container {
         background-color: rgb(35, 138, 207);
-        margin: 2px 2px;
-        width: 1500px;
+        margin: 5px;
+        width: 100%;
         height: 700px;
         display: flex;
         box-sizing: border-box;
         overflow-y: hidden;
+        overflow-x: hidden;
       }
 
       .contactform {
         position: relative;
-        left: 990px;
+        left: 800px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        margin: 20px 20px;
+        align-items: stretch;
+        justify-content: center;
+        margin: 4px;
         border: none;
-        padding: 10px 10px;
-        width: 420px;
-        height: 42vw;
+        padding: 30px;
+        width: 35%;
         background-color: rgb(247, 247, 240);
         font-family: "Helvetica", sans-serif;
+        box-shadow: 5px 5px rgb(229, 234, 236);
       }
 
       h1 {
         color: rgb(35, 138, 207);
         width: 400px;
         position: relative;
+        text-align: center;
       }
 
-      .blck {
-        width: 350px;
-        display: block;
+      .input_field {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
         height: 40px;
-        position: relative;
-
         border: solid 2px rgb(35, 138, 207);
       }
       .message {
         height: 100px;
-        position: relative;
+        width: 80%;
       }
       .btn {
         background-color: rgb(35, 138, 207);
-        width: 350px;
+        width: 80%;
         height: 50px;
         position: relative;
         color: white;
@@ -73,7 +67,7 @@
       .icons {
         position: relative;
         top: 400px;
-        left: 300px;
+        left: 00px;
         color: white;
       }
       #bigenvelope {
@@ -118,7 +112,7 @@
         <h1>Contact Us</h1>
         <form action="submit">
           <input
-            class="blck"
+            class="input_field"
             type="text"
             id="nam"
             name="fulname"
@@ -128,7 +122,7 @@
           <br />
           <br />
           <input
-            class="blck elements"
+            class="input_field"
             type="email"
             name="Email"
             id="email"
@@ -137,7 +131,7 @@
           <br />
           <br />
           <input
-            class="blck elements"
+            class="input_field"
             type="tel"
             id="phone"
             name="phone"
@@ -146,7 +140,7 @@
           <br />
           <br />
           <input
-            class="blck elements"
+            class="input_field"
             type="text"
             id="site"
             name="website"
@@ -156,24 +150,24 @@
           <br />
           <label for="textarea" class="message">Message</label>
           <textarea
-            class="blck message"
+            class="input_field message"
             name="textarea"
             cols="30"
             rows="10"
           ></textarea>
           <br />
           <br />
-          <button name="button" type="submit" class="btn elements">
+          <button name="button" type="submit" class="input_field btn">
             Submit
           </button>
         </form>
       </div>
       <div class="icons">
-        <i class="fas fa-envelope" id="bigenvelope"></i>
-        <i class="fas fa-envelope" id="smallenvelope"></i>
+        <i class="fa-solid fa-envelope" id="bigenvelope"></i>
+        <i class="fa-solid fa-envelope" id="smallenvelope"></i>
         <i class="fa-solid fa-rectangle" id="rectangle-1"></i>
         <i class="fa-solid fa-rectangle" id="rectangle-2"></i>
-        <i class="fas fa-at" id="at"></i>
+        <i class="fa-solid fa-at" id="at"></i>
       </div>
     </div>
   </body>
